@@ -1,0 +1,27 @@
+<html>
+<head><title>LAMP ON/OFF</title>
+    <style>
+ .buttoncoloretc{background: turquoise; width:100px;
+                 padding:10px;
+                border-radius:25px;
+                /*margin:50px;*/}    
+    
+    #lampof{width:100px; padding: 200px 600px;}    
+    #lampon{width:100px;}     
+     
+    </style>
+
+</head>
+<body>
+
+<form>
+   <input type="button" value="ON"  id="button1"class="buttoncoloretc" onclick="document.getElementById('lampon').src='5.png'"/>
+   <input type="button" value="OF"  id="button2" class="buttoncoloretc" onclick="document.getElementById('lampon').src='1.png'"/>
+
+
+</form>
+
+<img src="5.png" id="lampon"/>
+
+</body>
+</html>
