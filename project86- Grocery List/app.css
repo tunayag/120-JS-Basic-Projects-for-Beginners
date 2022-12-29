@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkblue;
+}
+
+.container {
+    width: 500px;
+    border: 1px white solid;
+    color: white;
+    padding: 3em;
+    box-shadow: 1px 5px 10px rgba(255, 255, 255, 1);
+}
+
+h1 {
+    font-size: 3em;
+}
+
+input {
+    font-size: 1.5em;
+}
+
+button {
+    padding: .7em;
+    font-size: 1.2em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+    border-radius: .5em;
+}
+
+button:hover {
+    color: white;
+    background-color: darkblue;
+    border:
+        /*.1em*/
+        2px solid white;
+}
+
+li {
+    list-style-type: none;
+    font-size: 1.5em;
+    margin-right: 10em;
+}
+
+.list-item {
+    display: flex;
+    margin-top: 1em;
+}
+
+.fa-trash {
+    position: absolute;
+    right: 35%;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.fa-pen-to-square {
+    cursor: pointer;
+    position: absolute;
+    right: 39%;
+    font-size: 1.5em;
+
+}
+
+.delete-button {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 1em;
+}
+
+.error {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5em;
+    margin-top: 1em;
+    background-color: red;
+    text-align: center;
+}
+
+
+.hidden {
+    visibility: hidden;
+}

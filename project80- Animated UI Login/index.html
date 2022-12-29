@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated UI Login</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- LOGIN SECTION-->
+        <div class="login-container" id="login">
+            <div class="login-image-container">
+                <img src="https://images.pexels.com/photos/1181325/pexels-photo-1181325.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    id="login-image">
+            </div>
+
+            <div class="login-body-container">
+                <h1>Login</h1>
+                <input type="text" placeholder="Username">
+                <input type="text" placeholder="Password">
+                <button>Login</button>
+                <a href="#" data-id="forgot" class="forgot-link">Forgot password?</a>
+                <div class="new-account">
+                    <p>Don't have an account?</p>
+                    <a href="#" data-id="register" class="register-link">Register</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- REGISTER SECTION-->
+        <div class="register-container" id="register">
+            <div class="register-body-container">
+                <h1>Register</h1>
+                <input type="text" placeholder="Username">
+                <input type="text" placeholder="E-mail">
+                <input type="text" placeholder="Password">
+                <button>Register</button>
+                <div class="new-account">
+                    <p>Have an account?</p>
+                    <a href="" data-id="login" class="login-link">Login</a>
+                </div>
+            </div>
+            <div class="register-image-container">
+                <img src="https://images.pexels.com/photos/12304524/pexels-photo-12304524.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    id="register-image">
+            </div>
+        </div>
+
+        <!-- FORGOT PASSWORD SECTION-->
+        <div class="forgot-password-container" id="forgot">
+            <div class="forgot-password-body-container">
+                <div class="close"></div>
+                <h1>Reset Password</h1>
+                <input type="text" placeholder="Enter your e-mail">
+                <button id="reset" class="reset-button">Reset Password</button>
+                <p class="alert">We have sent an email to reset your password!</p>
+            </div>
+            <div class="forgot-password-image-container">
+                <img src="https://images.pexels.com/photos/2233388/pexels-photo-2233388.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                    id="reset-image">
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

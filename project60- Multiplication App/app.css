@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: saddlebrown;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: slateblue;
+    width: 30%;
+    padding: 3em;
+    border-radius: 1rem;
+}
+
+p {
+    position: fixed;
+    top: 21%;
+    font-size: 2em;
+    left: 36%;
+}
+
+.score {
+    position: fixed;
+    top: 21%;
+    font-size: 1.1em;
+    left: 48%;
+}
+
+h2 {
+    margin: 1em 0;
+}
+
+input {
+    width: 100%;
+    padding: .5em;
+    font-size: 1.2em;
+    border-radius: 1em;
+}
+
+button {
+    width: 100%;
+    background-color: aquamarine;
+    font-size: 1em;
+    border: none;
+    margin-top: 1em;
+    padding: .5em;
+    border-radius: 1em;
+    cursor: pointer;
+}

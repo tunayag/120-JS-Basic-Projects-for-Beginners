@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="app.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container">
+        <div class="front-container">
+
+            <header>Weather App</header>
+            <hr>
+            <p id="error"></p>
+            <input type="text" placeholder="Enter city name">
+            <p id="or">or</p>
+            <button>Get Device Location</button>
+        </div>
+
+        <div class="details-container deactive">
+            <header><i class='bx bx-left-arrow-alt arrow'></i>Weather App</header>
+            <img src="./clear.svg">
+            <p><span id="temp">25</span>°C</p>
+            <p id="weather">Snow</p>
+            <p id="city">Klaipeda, Lithuania</p>
+            <hr>
+            <div class="bottom-container">
+                <div class="left">
+                    <div class="left-icon"><i class='bx bxs-thermometer'></i></div>
+                    <div class="left-detail">
+                        <p><span id="feels-like">30</span>°C</p>
+                        <p>Feels like</p>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="right-icon"><i class='bx bxs-droplet-half'></i></div>
+                    <div class="right-detail">
+                        <p><span id="humidity">93</span>%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

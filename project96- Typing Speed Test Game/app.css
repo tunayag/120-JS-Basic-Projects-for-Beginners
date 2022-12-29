@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #B5151C;
+}
+
+.container {
+    width: 600px;
+    height: 375px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: .5em;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 1);
+}
+
+.bottom-container {
+    display: flex;
+    gap: 5px;
+    margin-top: 2em;
+}
+
+
+button {
+    margin-left: 5em;
+    border-radius: .5em;
+    border: none;
+    font-size: 1.1em;
+    width: 100px;
+    height: 65px;
+    border: 1px solid #B5151C;
+    background-color: lightgreen;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #B5151C;
+    color: white;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+#last {
+    width: 65.15%;
+}
+
+.text {
+    overflow: hidden;
+    max-height: 220px;
+}
+
+.text::-webkit-scrollbar {
+    width: 0;
+}
+
+.text p {
+    font-size: 21px;
+    text-align: justify;
+    letter-spacing: 1px;
+    word-break: break-all;
+}
+
+#text span {
+    letter-spacing: 1px;
+    position: relative;
+}
+
+
+
+
+
+
+.text p span.correct {
+    color: #56964f;
+}
+
+.text p span.incorrect {
+    color: #cb3439;
+    outline: 1px solid #fff;
+    background: #ffc0cb;
+    border-radius: 4px;
+}
+
+.text p span.active {
+    color: #17A2B8;
+}
+
+.text p span.active::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    border-radius: 5px;
+    background: #17A2B8;
+    animation: blink 1s ease-in-out infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 1;
+    }
+}
+
+input {
+    width: 100%;
+    margin-bottom: 1em;
+    z-index: -999;
+}

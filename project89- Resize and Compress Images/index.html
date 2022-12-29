@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resize and Compress Images</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="" alt="">
+            <input type="file" accept="image/*" id="upload-input" hidden>
+            <i class="fa-solid fa-cloud-arrow-up"></i>
+            <p id="upload">Browse File to Upload </p>
+        </div>
+        <div class="body-container">
+            <div class="width">
+                <p id="width">Width</p>
+                <input type="text" placeholder="px" id="width-input">
+            </div>
+            <div class="height">
+                <p id="height">Height</p>
+                <input type="text" placeholder="px" id="height-input">
+            </div>
+        </div>
+        <div class="ratio-quality">
+
+            <div class="ratio">
+                <input type="checkbox" id="ratio">
+                <label for="ratio">Lock Aspect Ratio</label>
+            </div>
+            <div class="quality">
+                <input type="checkbox" id="quality">
+                <label for="quality">Reduce Quality</label>
+            </div>
+        </div>
+        <div class="button-container">
+            <button>DOWNLOAD IMAGE</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(31, 30, 30);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+.calender {
+    width: 250px;
+    height: 250px;
+    background-color: chartreuse;
+    border-radius: 1em;
+}
+
+.calender-head {
+    width: 100%;
+    height: 2em;
+    padding: 1.5em;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: chocolate;
+    border-radius: .5em .5em 0 0;
+}
+
+.calender-body {
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 2em;
+    font-size: 1.75em;
+}
+
+.calender-body p {
+    border-radius: 2%;
+    padding: 1.1em;
+    background-color: springgreen;
+    filter: brightness(.5);
+    color: orangered;
+}

@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: .1em;
+}
+
+.split {
+    width: 50%;
+    height: 100%;
+    top: 0;
+
+}
+
+.split.left {
+    position: absolute;
+    left: 0;
+    background-image: url("https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-7inch-deeppurple?wid=2560&hei=1440&fmt=jpeg&qlt=95&.v=1660754254057");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+
+}
+
+
+.split.right {
+    position: absolute;
+    right: 0;
+    background-image: url("https://cdn.vatanbilgisayar.com/Upload/PRODUCT/samsung/thumb/132721-1-2_large.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flexbox;
+    background-position: 20% 40%;
+}
+
+.btn {
+    padding: 2rem;
+    border-radius: 2em;
+    border: none;
+    background-color: green;
+    color: bisque;
+    font-size: 2rem;
+    box-shadow: .3rem .3rem .3rem rgba(255, 255, 255s, .3);
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+button:hover {
+    background-color: bisque;
+    color: green;
+    transition: .45s;
+}
+
+h1 {
+    font-size: 7rem;
+    backdrop-filter: brightness(.8);
+    letter-spacing: .1em;
+}
+
+.active-left .left {
+    width: 70%;
+    height: 150%;
+    background-position: 50% 100%;
+}
+
+.active-left .right {
+    width: 30%;
+    height: 100%;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+
+}
+
+.active-right .left {
+    width: 30%;
+    background-position: 50%;
+}
+
+.active-right .right {
+    width: 70%;
+    background-position: 60% 21%;
+}
+
+.left,
+.right {
+    transition: ease 1s;
+}

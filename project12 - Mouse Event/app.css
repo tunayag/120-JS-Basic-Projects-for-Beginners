@@ -1,0 +1,44 @@
+body {
+
+    height: 100vh;
+    display: flex;
+    background: blueviolet;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+.container {
+    display: flex;
+}
+
+.mouse-event {
+    position: relative;
+    border: 1px solid white;
+    margin: 5rem;
+    font-size: 1.1rem;
+    min-width: 180px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.mouse-event h4 {
+    position: absolute;
+    top: -4rem;
+    font-size: 1.1rem;
+    font-weight: 300;
+
+}
+
+@media (max-width:500px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .mouse-event {
+        margin: 3rem;
+    }
+}

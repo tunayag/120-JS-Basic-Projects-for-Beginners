@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkmagenta;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.calender {
+    width: 450px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: lightcyan;
+}
+
+.month-name {
+    height: 100px;
+    width: 100%;
+    font-size: 1.5em;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.month-name p {
+    margin-bottom: .7em;
+}
+
+.weekdays {
+    display: flex;
+    width: 100%;
+    font-weight: bold;
+    height: 50px;
+    background-color: crimson;
+    color: white;
+}
+
+.weekdays p {
+    display: flex;
+    align-items: center;
+    margin: 0em 1.1em;
+}
+
+.days {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0.3em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.days div {
+    font-size: 1.1em;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.empty {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    background-color: transparent;
+}
+
+.mybirthday {
+    background-color: limegreen;
+    border-radius: 10px;
+}
+
+.days div:hover {
+    opacity: .9;
+    color: white;
+    background-color: orangered;
+    border: 1px solid black;
+    border-radius: 10px;
+}

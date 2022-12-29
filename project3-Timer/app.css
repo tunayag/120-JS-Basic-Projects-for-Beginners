@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+h1{
+    font-size: 3.5rem;
+}
+.container{ 
+   
+    width:50%;
+    height: 40%;
+    margin: 5rem auto  ;
+    flex-direction:column;
+    display: flex;
+    text-align: center;
+    justify-content:space-between;
+}
+
+/*form{
+    display: flex;
+    justify-content: center;
+}*/
+
+form label{
+     margin: 0 .5rem ;  
+}
+
+#chosen_minute, #chosen_second {
+    margin: 0px ;
+    padding: 2px;
+    font-size: 1.5rem;
+}    
+
+#Start, #Reset{
+    cursor: pointer;
+    background-color: red;
+    border-radius: 10px;
+    padding:10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+#Start:hover, #Reset:hover{
+    background-color: aqua;
+}

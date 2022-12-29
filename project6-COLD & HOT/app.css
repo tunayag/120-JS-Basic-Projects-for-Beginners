@@ -1,0 +1,55 @@
+* {
+
+    margin: .5rem;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.container{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10rem;
+   border: 1px solid black;
+   border-radius: 5rem;
+}
+
+#guess-btn{
+    background-color: rgb(14, 149, 167);
+    color: aliceblue;
+}
+
+.last-guesses{
+    display: flex;
+    list-style-type: none;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+#guess{
+    border-color: red;
+    border-radius: 0rem;
+}
+#guess-btn{
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+
+#restart-btn{
+ display: none;
+}

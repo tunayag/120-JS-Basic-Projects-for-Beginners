@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.password-container {
+    background-color: aqua;
+    width: 35%;
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: 0 5px 2px rgba(0, 0, 0, .3);
+
+}
+
+.input-container {
+    border: solid 2px;
+    padding: .7rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 1em;
+}
+
+.fa-copy {
+    cursor: pointer;
+    opacity: .5;
+}
+
+.fa-copy:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.btn {
+    background-color: blue;
+    color: bisque;
+    padding: .5rem;
+    font-size: 1.4rem;
+    border-radius: .5rem;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: aqua;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+.alert-container {
+    position: fixed;
+    border-radius: 5px;
+    width: 15em;
+    height: 2em;
+    background-color: green;
+    right: 200px;
+    bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.alert-container.active {
+    right: -500px;
+}

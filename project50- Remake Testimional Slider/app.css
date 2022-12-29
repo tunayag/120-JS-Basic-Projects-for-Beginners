@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 35%;
+    height: 300px;
+    background-color: rgb(59, 16, 214);
+    border-radius: 1rem;
+    font-size: 1.1em;
+}
+
+img {
+    top: 20%;
+    position: fixed;
+    width: 75px;
+    height: 85px;
+    border-radius: 50%;
+}
+
+.image-container {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    color: aqua;
+    padding: 1em;
+    text-align: center;
+}

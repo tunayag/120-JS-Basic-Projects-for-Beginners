@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+
+.video {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.video.active {
+    position: fixed;
+    right: 0%;
+    bottom: 0%;
+    height: 175px;
+    width: 300px;
+    object-fit: cover;
+}

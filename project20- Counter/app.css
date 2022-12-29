@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+h1 {
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+}
+
+.value {
+    font-size: 7rem;
+}
+
+button {
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: blue;
+    background-color: blueviolet;
+}
+
+.btn-danger {
+    margin-right: 1.5rem;
+}
+
+.btn-success {
+    margin-left: 1.5rem;
+}
+
+.asd {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+.qq {
+    margin-top: 1.5rem;
+}

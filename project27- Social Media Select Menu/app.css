@@ -1,0 +1,75 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: linear-gradient(135deg,
+            purple 20%,
+            lightgreen 80%);
+}
+
+.menu {
+    background-color: aquamarine;
+    width: 300px;
+    border-radius: 1rem;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    opacity: .4;
+}
+
+.menu p {
+    margin: 0 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu .fa-angle-down {
+    transition: transform .3s;
+}
+
+.social-lists {
+    width: 300px;
+    background-color: aquamarine;
+    padding: .5em .5em 0;
+    border-radius: 1rem;
+    opacity: .4;
+    list-style-type: none;
+}
+
+.social-lists li {
+    display: flex;
+    margin: 1em;
+    text-align: center;
+    cursor: pointer;
+    transition: linear padding .3s;
+    padding: .5rem;
+}
+
+.social-lists li:hover {
+    opacity: .7;
+    background-color: lightgoldenrodyellow;
+    border-radius: 1rem;
+    padding-left: .7em;
+    transition: linear padding .3s;
+}
+
+.rotate .fa-angle-down {
+    transform: rotate(180deg);
+}
+
+.hide {
+    visibility: hidden;
+}

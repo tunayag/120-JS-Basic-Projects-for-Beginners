@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    width: 500px;
+    text-align: center;
+
+}
+
+h1,
+p {
+    color: red;
+    font-size: 2em;
+}
+
+.bar div {
+    width: 50%;
+}
+
+.back {
+    position: absolute;
+    background-color: gray;
+    height: 1em;
+    border-radius: 1em;
+    width: 100%;
+}
+
+.front {
+    position: absolute;
+    height: 1em;
+    background-color: green;
+    width: 100%;
+    border-radius: 1em;
+}

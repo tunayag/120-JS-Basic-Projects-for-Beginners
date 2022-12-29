@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: yellowgreen;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    margin: 0 1em;
+}
+
+h1 {
+    margin-bottom: 1.5em;
+    color: azure;
+    font-size: 5rem;
+}
+
+.btn {
+    padding: 2em;
+    font-size: 2em;
+    text-transform: capitalize;
+    cursor: pointer;
+    border-radius: 1em;
+    border: none;
+    background-color: slateblue;
+    margin: 0 .5em;
+    box-shadow: 1px 5px 10px rgba(255, 255, 255, 1);
+}
+
+.btn:hover {
+    background-color: orangered;
+}

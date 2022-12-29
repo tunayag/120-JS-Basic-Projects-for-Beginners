@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remake Timer</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1><span id="minute">00</span>:<span id="second">00</span></h1>
+
+        <form>
+            <label> Minutes<input type="number" id="chosen-minute" min="00" max="59" class="input" value="00"></label>
+            <label> Seconds<input type="number" id="chosen-second" min="00" max="59" class="input" value="00"> </label>
+        </form>
+
+        <div class="btn-container">
+            <button id="Start" class="btn start">Start</button>
+            <button id="Reset" class="btn reset">Reset</button>
+        </div>
+
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+body {
+    height: 100vh;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background-color: darkblue;
+    color: wheat;
+    padding: 1em;
+    font-size: 1.2em;
+    width: 500px;
+}
+
+input {
+    padding: 1em 0.5em;
+    width: 75%;
+    font-size: 1.1em;
+}
+
+.check {
+    width: 100%;
+    display: flex;
+}
+
+.check p {
+    margin-right: 5em;
+}

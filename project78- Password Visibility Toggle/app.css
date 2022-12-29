@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.psw-div {
+    display: flex;
+}
+
+.hide {
+    position: absolute;
+    right: 43.35%;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    padding: .5em;
+}
+
+.pswww {
+    position: absolute;
+    right: 43.35%;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    cursor: pointer;
+
+}

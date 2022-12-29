@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Any YouTube Video</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <form class="form" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+        <header>Download Thumbnail</header>
+        <p id="info">Paste video url here:</p>
+        <input type="text" id="url">
+        <input class="hidden-input" type="hidden" name="imgurl">
+        <div class="upload">
+            <img src="#" alt="">
+            <i class="icon fas fa-cloud-download-alt"></i>
+            <p>Paste video URL to download thumbnail</p>
+        </div>
+        <button name="download">Download the Thumbnail</button>
+    </form>
+    <script src="app.js">
+
+    </script>
+</body>
+
+</html>

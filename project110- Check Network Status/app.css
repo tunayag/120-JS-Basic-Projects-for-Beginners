@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 1);
+    display: flex;
+    width: 430px;
+    border-radius: .5em;
+    padding: 1em;
+    font-size: 1.1em;
+    gap: 25px;
+    margin: 1em;
+}
+
+.fa-wifi {
+    color: darkcyan;
+    font-size: 2em;
+    position: absolute;
+    cursor: pointer;
+}
+
+.wifi-icon {
+    position: relative;
+
+}
+
+.fa-globe {
+    font-size: 2em;
+    color: red;
+    cursor: pointer;
+    position: absolute;
+}
+
+.body-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+.fa-xmark {
+    cursor: pointer;
+    font-size: 2em;
+    color: darkgray;
+}
+
+.active {
+    display: block;
+}

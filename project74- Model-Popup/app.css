@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    background-color: orange;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 11em;
+}
+
+.head h1 {
+    font-size: 60px;
+}
+
+.head p {
+    font-size: 1.5em;
+}
+
+button {
+    padding: .75em;
+    border-radius: 1em;
+    border: none;
+    background-color: aquamarine;
+    font-size: 1.1em;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.text {
+    width: 30%;
+    background-color: lightgoldenrodyellow;
+    border-radius: 1em;
+    position: fixed;
+    top: 5%;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: none;
+    cursor: pointer;
+}
+
+span {
+    font-size: 2em;
+    display: block;
+    margin-left: 85%;
+    cursor: pointer;
+}
+
+.text p {
+    margin: 1em;
+    font-size: 1em;
+}
+
+.text.active {
+    display: block;
+    animation: slide .5s ease;
+}
+
+
+.container.active {
+    filter: blur(4px);
+    cursor: pointer;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateY(-50px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}

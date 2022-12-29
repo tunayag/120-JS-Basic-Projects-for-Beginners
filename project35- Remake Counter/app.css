@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: coral;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+    font-size: 5em;
+}
+
+.btn {
+    font-size: 1.1em;
+    padding: .75em;
+    margin: 1em .5em;
+    border-radius: 1em;
+    background-color: darkred;
+    color: wheat;
+    cursor: pointer;
+}

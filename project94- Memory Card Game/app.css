@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #321444;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    width: 350px;
+    height: 425px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: .5em;
+}
+
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+    height: 350px;
+    justify-content: space-evenly;
+}
+
+.cardEl {
+    list-style: none;
+    user-select: none;
+    width: 22.5%;
+    height: 22.5%;
+    border-radius: .5em;
+    background-color: whitesmoke;
+    border: 5px solid white;
+    perspective: 800px;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+    transition: transform 3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.front {
+    pointer-events: none;
+    font-size: 3em;
+    color: darkblue;
+    transition: transform 3s ease;
+}
+
+.back {
+    pointer-events: none;
+    transform: rotate(-180deg);
+    transition: transform 3s linear;
+    display: none;
+}
+
+img {
+    width: 35px;
+}
+
+.cardEl.flip .back {
+    transition: transform 3s ease;
+    transform: rotate(0deg);
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardEl.flip .front {
+    display: none;
+    transition: transform 3s ease;
+    transform: rotate(180deg);
+}
+
+.cardEl.shake {
+    animation: shake 0.35s ease-in-out;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-13px);
+    }
+
+    40% {
+        transform: translateX(13px);
+    }
+
+    60% {
+        transform: translateX(-8px);
+    }
+
+    80% {
+        transform: translateX(8px);
+    }
+}
+
+p {
+    font-size: 1.5em;
+    margin: .5em;
+}
+
+.output {
+    display: flex;
+}

@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(27, 248, 127);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+}
+
+.stats-container {
+    margin: 2rem;
+    border: dotted 1px black;
+    min-width: 300px;
+    height: 100px;
+    position: relative;
+    padding: 1.15rem;
+}
+
+.icon {
+    position: absolute;
+    top: -1.6rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.counter {
+    position: absolute;
+    font-size: 4.5rem;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 500px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+}

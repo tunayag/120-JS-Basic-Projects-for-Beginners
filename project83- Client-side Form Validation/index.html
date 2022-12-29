@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client-side Form Validition</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="head-container">
+            <h1>Create Account</h1>
+            <p class="error-text hidden">Enter the blanks!</p>
+        </div>
+        <form>
+            <div class="username form-control">
+                <p>Username:</p>
+                <input type="text" id="username" placeholder="tuna_yag">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small></small>
+            </div>
+            <div class="e-mail form-control">
+                <p>E-mail:</p>
+                <input type="email" id="e-mail" placeholder="tunayag@gmail.com">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small></small>
+            </div>
+            <div class="password form-control">
+                <p>Password:</p>
+                <input type="password" id="password" placeholder="Tunayag123.">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small></small>
+            </div>
+            <div class="password-check form-control">
+                <p>Password Check:</p>
+                <input type="password" id="password-check" placeholder="Tunayag123.">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small></small>
+            </div>
+            <button>Submit</button>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

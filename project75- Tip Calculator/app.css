@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    border: 1px solid black;
+    width: 300px;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, .5);
+}
+
+.head {
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    padding: 2em;
+}
+
+h3 {
+    color: red;
+}
+
+.bill {
+    background-color: lightpink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1em;
+    padding: 1em;
+}
+
+input {
+    width: 50%;
+    margin-left: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    text-align: right;
+}
+
+.rate-service {
+    display: flex;
+    background-color: lightgreen;
+    justify-content: space-around;
+    padding: 1em;
+    font-size: 1.1em;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    background-color: white;
+}
+
+button {
+
+    border-radius: 1em;
+    padding: .75em;
+    font-size: 1.1em;
+    font-weight: 100;
+    border: 2px solid black;
+    background-color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: lightpink;
+}
+
+.tip-amount {
+    background-color: lightgreen;
+    padding: 1em;
+    font-size: 1.5em;
+}
+
+.total-bill {
+    background-color: lightgreen;
+    padding: 1em;
+    font-size: 1.5em;
+    color: red;
+}

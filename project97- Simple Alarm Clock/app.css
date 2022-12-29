@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #D341DC;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 350px;
+    border: 5px solid black;
+    border-radius: .5em;
+    background-color: lightgreen;
+}
+
+.clock-image {
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.head-container {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    margin: 1em;
+    border-radius: .5em;
+    padding: .5em;
+}
+
+.body-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+select {
+    margin: 1em 0;
+    padding: .75em;
+    border-radius: .5em;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.body-container.disable {
+    opacity: .5;
+    pointer-events: none;
+}
+
+option {
+    cursor: pointer;
+}
+
+button {
+    margin: .5em 0;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: .5em;
+    border-radius: .5em;
+    border: none;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: red;
+    color: white;
+}
+
+.sa {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+    top: 40%;
+    left: 65%;
+    border-radius: 50%;
+}
+
+.as {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    border-radius: 50%;
+}

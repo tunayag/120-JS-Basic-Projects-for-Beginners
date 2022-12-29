@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    border: 3px blue solid;
+}
+
+.head-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("https://images.pexels.com/photos/2531709/pexels-photo-2531709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+}
+
+h1 {
+    font-size: 5rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.button-head {
+    padding: 1em;
+    border-radius: .5em;
+    border: none;
+    font-size: 1.1em;
+    color: white;
+    background-color: black;
+    margin-bottom: 20rem;
+    cursor: pointer;
+    transition: filter 1s;
+}
+
+.button-head:hover {
+    background-color: orangered;
+    color: white;
+}
+
+.head-container.active {
+    filter: blur(5px);
+}
+
+.body-container {
+    position: fixed;
+    z-index: 999;
+    width: 350px;
+    height: 250px;
+    border-radius: 1em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: aqua;
+    top: 47.5%;
+    background: url("https://images.pexels.com/photos/863988/pexels-photo-863988.jpeg?auto=compress&cs=tinysrgb&w=400");
+    visibility: hidden;
+    opacity: 0;
+    transition: all .75s;
+}
+
+.body-container.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+form {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    padding: .75em;
+    border-radius: .5em;
+    font-size: 1em;
+    border: none;
+    margin-top: 1em;
+}
+
+.button-input {
+    padding: .75em;
+    border-radius: .5em;
+    border: none;
+    margin: 1em;
+    background-color: blueviolet;
+    font-size: 1em;
+    color: white;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.button-input:hover {
+    color: blueviolet;
+    background-color: white;
+}
+
+h3 {
+    color: white;
+    font-size: 1.4em;
+}
+
+.fa-solid {
+    position: fixed;
+    color: white;
+    left: 100%;
+    top: 0;
+    transform: translate(-150%);
+    cursor: pointer;
+
+}

@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2A5D23;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    box-shadow: 1px 5px 10px rgba(255, 255, 255, 1);
+    border-radius: .5em;
+    width: 450px;
+    height: 225px;
+}
+
+.icons {
+    margin-top: .5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    gap: 25px;
+    font-size: 2em;
+    margin-left: .5em;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+}
+
+button {
+    width: 115px;
+    border-radius: .5em;
+    border: none;
+    font-size: 1.1em;
+    margin-right: .5em;
+    padding: .25em;
+    cursor: pointer;
+    color: #2A5D23;
+    background-color: black;
+}
+
+button:hover {
+    background-color: #2A5D23;
+    color: white;
+    border: 1px solid white;
+}
+
+.text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    display: flex;
+}
+
+#text {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.fa-quote-right {
+    align-items: flex-end;
+    display: flex;
+
+}
+
+.author {
+    display: flex;
+    justify-content: flex-end;
+    font-style: italic;
+    margin: .5em;
+}
+
+i {
+    margin: .2em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+button.loading {
+    pointer-events: none;
+    opacity: .5;
+}
+
+.fa-volume-up {
+    pointer-events: none;
+}

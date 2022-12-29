@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightseagreen;
+}
+
+.container {
+    width: 500px;
+    height: 250px;
+    border-radius: .5em;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 1);
+    background-color: white;
+}
+
+.container.active {
+    height: 500px;
+}
+
+.body-container.active {
+    display: flex;
+    opacity: 1;
+    pointer-events: auto;
+    transition: 1.5s ease opacity;
+}
+
+.ratio-quality.active {
+    display: flex;
+    opacity: 1;
+    pointer-events: auto;
+    transition: 1.5s ease opacity;
+}
+
+.button-container.active {
+    display: flex;
+    opacity: 1;
+    pointer-events: auto;
+    transition: 1.5s ease opacity;
+}
+
+.button-container {
+    opacity: 0;
+    pointer-events: none;
+}
+
+i {
+    font-size: 4em;
+}
+
+.image-container {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border: 3px dashed lightgray;
+    width: 500px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: .5em;
+    margin-top: .1em;
+}
+
+.image-container.active img {
+    display: flex;
+    width: 100%;
+    object-fit: cover;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.body-container {
+    margin-top: 1.5em;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    opacity: 0;
+    pointer-events: none;
+}
+
+button {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: .5em;
+    border: none;
+    background-color: aqua;
+    cursor: pointer;
+}
+
+input {
+    width: 150px;
+    height: 30px;
+    border-radius: .5em;
+    font-size: 1em;
+}
+
+#upload {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+#width,
+#height {
+    font-size: 1.5em;
+}
+
+.ratio-quality {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.ratio {
+    display: flex;
+    flex-direction: column;
+}
+
+.quality {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    color: chartreuse;
+}
+
+
+.container {
+    position: relative;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 33%;
+}
+
+.loading-bar-front {
+    position: absolute;
+    width: 0%;
+    height: .5rem;
+    background-color: orangered;
+    border-radius: 1rem;
+    border: none;
+}
+
+.loading-bar-back {
+    position: absolute;
+    width: 100%;
+    height: .5rem;
+    background-color: white;
+    border-radius: 1rem;
+    border: none;
+}

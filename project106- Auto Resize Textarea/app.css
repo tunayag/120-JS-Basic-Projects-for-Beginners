@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(red, yellow);
+    min-height: 100vh;
+}
+
+.container {
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 1);
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: .1em;
+}
+
+header {
+    font-size: 30px;
+    margin: .5em 0;
+}
+
+textarea {
+    width: 80%;
+    border-radius: .1em;
+    font-size: 1.1em;
+    height: 35px;
+    resize: none;
+    margin-bottom: 1em;
+    outline: none;
+}

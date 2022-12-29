@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+.side-container {
+    width: 100%;
+}
+
+.logo {
+    width: 200px;
+    height: 150px;
+    display: flex;
+}
+
+.hamburger {
+    position: absolute;
+    right: 200px;
+    width: 30px;
+    height: 30px;
+    margin-top: 3em;
+    cursor: pointer;
+}
+
+.line {
+    width: 100%;
+    background-color: black;
+    height: 4px;
+    margin: .25em 0;
+}
+
+
+.x {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    right: 0;
+    margin-top: 2em;
+}
+
+.linex {
+    width: 100%;
+    background-color: black;
+    height: .11em;
+    margin: .1em 0;
+
+}
+
+.x1 {
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+.x2 {
+    visibility: hidden;
+}
+
+.x3 {
+    transform: rotate(135deg);
+    position: absolute;
+    top: 0;
+}
+
+.sidebar {
+    cursor: pointer;
+    font-size: 2em;
+    width: 40%;
+    background-color: rgb(85, 199, 19);
+    height: 100vh;
+    /*display: none;*/
+    transform: translate(-100%);
+    transition: .5s;
+}
+
+.menu p {
+    padding: .5em;
+    margin-bottom: 1em;
+
+}
+
+
+p:hover {
+    border-radius: 10px;
+    background-color: brown;
+}
+
+.show.sidebar {
+    transform: translate(0);
+    /*    display: block;*/
+}

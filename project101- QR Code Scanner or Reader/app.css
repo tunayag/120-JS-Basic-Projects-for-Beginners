@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgrey;
+}
+
+.container {
+    height: 200px;
+    width: 350px;
+    background-color: darkmagenta;
+    border-radius: .5em;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease all;
+}
+
+.container.active {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease all;
+}
+
+.container.container.active .close {
+    transition: 1s ease all;
+}
+
+.close {
+    transition: 1s ease all;
+}
+
+.body-container {
+    border-radius: .5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+i {
+    font-size: 2em;
+}
+
+input.active {
+    display: block;
+}
+
+button {
+    font-size: 1.1em;
+    color: lightcoral;
+    border: none;
+    padding: .75em;
+    border-radius: .5em;
+    margin-left: 4em;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+img {
+    margin-top: 0;
+    width: 200px;
+    height: 200px;
+    display: none;
+    transition: 1s ease all;
+}
+
+textarea {
+    display: none;
+}
+
+.details {
+    display: none;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.5em;
+}
+
+.container.container.active img {
+    display: block;
+    transition: 1s ease all;
+}
+
+.container.container.active .content {
+    display: none;
+}
+
+.container.container.active textarea {
+    width: 100%;
+    height: 160px;
+    resize: none;
+    border: 1px solid darkblue;
+    border-radius: .5em;
+    font-size: 1.5em;
+    font-style: italic;
+    margin-top: 1em;
+    color: darkred;
+    display: block;
+    pointer-events: none;
+    user-select: none;
+}
+
+.container.container.active .details {
+    display: block;
+}
+
+#error {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    width: 250px;
+    height: 50px;
+    background-color: darkred;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    border-radius: .5em;
+}

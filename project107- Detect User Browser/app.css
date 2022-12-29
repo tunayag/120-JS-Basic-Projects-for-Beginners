@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 10px;
+}
+
+.img-container {
+    display: flex;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 1);
+    width: 350px;
+    gap: 10px;
+    align-items: center;
+    border-radius: .5em;
+}
+
+header {
+    font-size: 50px;
+    margin-left: .5em;
+}
+
+img {
+    width: 45px;
+    height: 45px;
+    opacity: 0.5;
+}

@@ -1,0 +1,26 @@
+button {
+    width: 70px;
+    height: 37px;
+    background-color: brown;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+input {
+    width: 100px;
+    height: 30px;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    font-size: 1.3em;
+}

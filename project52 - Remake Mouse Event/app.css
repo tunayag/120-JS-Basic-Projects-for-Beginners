@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: purple;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    display: flex;
+}
+
+.mouse-event {
+    position: relative;
+    border: 3px solid black;
+    margin: 0 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 200px;
+    min-height: 125px;
+}
+
+p {
+    position: absolute;
+    top: -50%;
+    left: 0;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 3em;
+}

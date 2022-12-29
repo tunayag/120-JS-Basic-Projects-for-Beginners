@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.video-player {
+    height: 100vh;
+    width: 100%;
+}
+
+.gym-video {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(30%);
+}
+
+
+
+.play-button .div {
+    height: 100vh;
+    width: 100%;
+}
+
+button {
+    background-color: red;
+    padding: 1rem;
+    border-radius: 25%;
+    font-size: 3rem;
+    margin-left: 50%;
+    margin-top: 25%;
+}

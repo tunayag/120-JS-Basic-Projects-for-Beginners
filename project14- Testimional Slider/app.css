@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+img {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+}
+
+
+.testimonial-container {
+    width: 500px;
+    height: 220px;
+    min-width: 300px;
+    padding: 20px;
+    border-radius: 1rem;
+    background-color: rgb(33, 22, 65);
+    box-shadow: 0 .3rem 1rem rgba(0, 0, 0, .5);
+    position: relative;
+}
+
+.testimonial-container p {
+    margin-top: 5rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+}
+
+h4 {
+    font-size: 1.7rem;
+    color: rgb(255, 255, 255);
+}

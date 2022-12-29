@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save the text in different format</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <textarea id="text-area" placeholder="Enter something to save"></textarea>
+        <div class="body-container">
+            <div class="file-name">
+                <p>File Name</p>
+                <input type="text" placeholder="Enter file name" id="file-name">
+            </div>
+            <div class="save-as">
+                <p>Save as</p>
+                <select class="select">
+                    <option value="text/plain">Text File (.txt)</option>
+                    <option value="text/html">HTML File (.html)</option>
+                    <option value="application/pdf">PDF File (.pdf)</option>
+                    <option value="application/msword">DOC File (.doc)</option>
+                </select>
+            </div>
+        </div>
+        <button id="save-button">Save as the text file</button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+}
+
+
+.split.left {
+    background-image: url("https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-14-pro-model-select-202209-6-7inch?wid=2560&hei=1440&fmt=jpeg&qlt=95&.v=1660754175027");
+    left: 0%;
+    height: 100%;
+    position: absolute;
+    background-color: aquamarine;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 200%;
+}
+
+.split.right {
+    background-image: url("https://cdn.vatanbilgisayar.com/Upload/PRODUCT/samsung/thumb/132721-1-2_large.jpg");
+    background-size: 112.5%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    right: 0;
+    height: 100%;
+    position: absolute;
+    background-color: lightcoral;
+    width: 50%;
+}
+
+h1 {
+    backdrop-filter: brightness(.8);
+    font-size: 3rem;
+}
+
+.btn {
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    padding: .5rem;
+    background-color: black;
+    color: white;
+}
+
+
+.active-left .left {
+    width: 70%;
+    height: 150%;
+    background-position: 50% 100%;
+}
+
+.active-left .right {
+    width: 40%;
+    height: 100%;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+
+}
+
+.active-right .left {
+    width: 45%;
+    background-position: 50%;
+}
+
+.active-right .right {
+    width: 70%;
+    background-position: 60% 21%;
+}
+
+.left,
+.right {
+    transition: ease 1s;
+}

@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 1.5em;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: lightsteelblue;
+    border: 1px white solid;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 1);
+    border-radius: .5em;
+}
+
+.head-container {
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+p {
+    font-size: 1.1em;
+    margin: .25em 0;
+}
+
+input {
+    width: 95%;
+    padding: .5em;
+    margin: .25em 0;
+    position: relative;
+}
+
+.form-control {
+    position: relative;
+}
+
+.form-control .fa-circle-check {
+    position: absolute;
+    right: 10%;
+    top: 56%;
+    color: green;
+    visibility: hidden;
+}
+
+
+.form-control .fa-circle-exclamation {
+    position: absolute;
+    color: red;
+    visibility: hidden;
+    right: 10%;
+    top: 50%;
+}
+
+
+button {
+    margin-top: 1em;
+    padding: .5em;
+    background-color: lightseagreen;
+    border: none;
+    border-radius: .1em;
+    cursor: pointer;
+    width: 100%;
+}
+
+.error-text {
+    color: black;
+    background-color: red;
+    font-size: 1.5em;
+    text-align: center;
+    width: 80%;
+}
+
+.error-text.hidden {
+    visibility: hidden;
+}

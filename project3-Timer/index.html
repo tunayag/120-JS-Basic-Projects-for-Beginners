@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1><span id="minute">00</span>:<span id="second">00</span></h1>
+        
+        <form>
+            <label>
+                Minutes
+                <input id="chosen_minute" type="number" min="0" max="59"  value="00"/>
+                
+            </label>
+            
+            <label>
+                Seconds
+                <input id="chosen_second" type="number" min="0" max="59"  value="00"/>
+                
+            </label>
+                
+        </form>
+        <button id="Start">START</button>
+        <button id="Reset" >RESET</button>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

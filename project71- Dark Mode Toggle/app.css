@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    visibility: hidden;
+}
+
+.label {
+    background-color: lightgray;
+    width: 90px;
+    height: 40px;
+    border-radius: 2rem;
+    cursor: pointer;
+    position: absolute;
+    border: 2px solid black;
+    transition: .5s;
+}
+
+.circle {
+    background-color: black;
+    width: 35px;
+    height: 35px;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    position: absolute;
+    animation: toggleOff linear .3s forwards;
+}
+
+.input:checked+.label {
+    background-color: lightgray;
+    border: 2px solid black;
+    box-shadow: 1px 3px 5px rgba(255, 255, 255, .3);
+}
+
+.input:checked+.label .circle {
+    animation: toggleOn .3s linear forwards;
+    background-color: white;
+}
+
+@keyframes toggleOn {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(50px);
+    }
+}
+
+@keyframes toggleOff {
+    0% {
+        transform: translateX(50px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
